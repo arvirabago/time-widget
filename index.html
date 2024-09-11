@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Time Buddy Widget</title>
+    <style>
+      .wtb-ew-v1 {
+        width: 369px;
+        display: inline-block;
+      }
+    </style>
   </head>
   <body>
-    <span class="wtb-ew-v1" style="width: 369px; display: inline-block">
+    <span class="wtb-ew-v1">
+      <!-- World Time Buddy Widget Script -->
       <script src="https://www.worldtimebuddy.com/clock_widget.js?h=4699066&bc=7F3300&cn=&wt=c2"></script>
+      <!-- Link to World Time Buddy Website -->
       <i><a href="https://www.worldtimebuddy.com/">World Clock</a></i>
-      <noscript
-        ><a href="https://www.worldtimebuddy.com/">World Clock</a></noscript
-      >
+      <!-- Fallback if JavaScript is disabled -->
+      <noscript>
+        <a href="https://www.worldtimebuddy.com/">World Clock</a>
+      </noscript>
+      <!-- Initialize the Widget -->
       <script>
         window[wtb_event_widgets.pop()].init();
       </script>
